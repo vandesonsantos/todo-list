@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react"
 import "./TodoList.css"
-import Icone from "./image/icon.jpg"
+import Icone from "./image/icon.webp"
 
 function TodoList() {
 
-    const listaStorage = localStorage.getItem("Lista")
-
-    const [lista, setLista] = useState(listaStorage ? JSON.parse(listaStorage) : []);
+    const [lista, setLista] = useState([]);
     const [novoItem, setNovoItem] = useState("")
 
     useEffect(() => {
@@ -41,57 +39,57 @@ function TodoList() {
     }
 
     return (
-        <>
-        <h1 className="Title">Lista de Tarefa</h1>
+        <div>
+            <h1 className="Title">Lista de Tarefa</h1>
 
-        <form className="Form" onSubmit={adicionaItem}>
-            <input className="InputTask" 
-                type="text" 
-                placeholder="Adicione uma tarefa" 
-                value={novoItem}
-                onChange={(e)=>{setNovoItem(e.target.value)}}
-                id="input-entrada"
-            />
-            <button className="ButtonAddTask">
-                Add
-            </button>
-        </form>
+            <form className="Form" onSubmit={adicionaItem}>
+                <input className="InputTask" 
+                    type="text" 
+                    placeholder="Adicione uma tarefa" 
+                    value={novoItem}
+                    onChange={(e)=>{setNovoItem(e.target.value)}}
+                    id="input-entrada"
+                />
+                <button className="ButtonAddTask">
+                    Add
+                </button>
+            </form>
 
-        <div className="TodoList">
-            <div style={{textAlign: "center"}}>
-                {
-                    lista.length < 1
-                        ?
-                        <img className="icone-central" src={Icone}/>
-                        :
-                        lista.map((item, index) => (
-                            <div key={index} 
-                            className={item.isCompleted ? "item completo" : "item"}>
-                                <span 
-                                onClick={() => { clicou(index) }}>{item.text}
-                                </span>
+            <div className="TodoList">
+                <div style={{textAlign: "center"}}>
+                    {
+                        lista.length < 1
+                            ?
+                            <img className="icone-central" src={Icone}/>
+                            :
+                            lista.map((item, index) => (
+                                <div key={index} 
+                                className={item.isCompleted ? "item completo" : "item"}>
+                                    <span 
+                                    onClick={() => { clicou(index) }}>{item.text}
+                                    </span>
 
-                                <button 
-                                onClick={() => { deleta(index) }} 
-                                className="BtnDelete">
-                                    Delete
-                                </button>
-                            </div>
-                        ))
-                        
-                }
-                {
-                    lista.length > 0 &&
-                    <button
-                    onClick={() => { deletaTudo() }} 
-                    className="DeleteAll">
-                        Delete todos
-                    </button>
-                }
-                
+                                    <button 
+                                    onClick={() => { deleta(index) }} 
+                                    className="BtnDelete">
+                                        Delete
+                                    </button>
+                                </div>
+                            ))
+                            
+                    }
+                    {
+                        lista.length > 0 &&
+                        <button
+                        onClick={() => { deletaTudo() }} 
+                        className="DeleteAll">
+                            Delete todos
+                        </button>
+                    }
+                    
+                </div>
             </div>
         </div>
-        </>
     )
 }
 
