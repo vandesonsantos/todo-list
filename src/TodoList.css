@@ -1,0 +1,103 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  background-color: #0D1117;
+  color: #E6EDF3;
+}
+*:focus{
+  outline: none;
+}
+
+.Title{
+  font-family: 'Asap Condensed', sans-serif;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.Form{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.Form .InputTask{
+  background-color: #161B22;
+  color: #E6EDF3;
+  font-size: 16px;
+  width: 400px;
+  padding: 10px 0 10px 15px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.Form .ButtonAddTask{
+  background-color: #2EA043;
+  color: #E6EDF3;
+  padding: 10px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.Form .ButtonAddTask:hover{
+  background-color: #fdfffdf8;
+  color: #000000;
+}
+
+.TodoList{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.TodoList .item{
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #4f586673;
+  padding: 5px 0 5px 15px;
+  border-radius: 5px;
+}
+
+.TodoList .CompleteTask{
+  background-color: #161B22;
+  margin-bottom: 50px;
+}
+
+.TodoList .CompleteTask span{
+  border: none;
+  color: #e6edf377;
+  text-decoration: line-through;
+}
+
+.TodoList .item .BtnDelete{
+  padding: 5px;
+  border: none;
+  background: none;
+  color: #e6edf3a2;
+  cursor: pointer;
+}
+
+.TodoList .item .BtnDelete:hover{
+  color: #DA3633;
+}
+
+.TodoList .DeleteAll{
+  border: 1px solid #DA3633;
+  background: none;
+  color: #DA3633;
+  padding: 7px 50px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.TodoList .DeleteAll:hover{
+  background-color: #DA3633;
+  color: #E6EDF3;
+}
+
+.icone-central{
+  max-width: 100%;
+}
