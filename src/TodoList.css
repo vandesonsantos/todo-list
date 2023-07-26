@@ -1,60 +1,5 @@
-/* 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.TodoList .item{
-  width: 400px;
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid #4f586673;
-  padding: 5px 0 5px 15px;
-  border-radius: 5px;
-}
-
-.TodoList .CompleteTask{
-  background-color: #161B22;
-  margin-bottom: 50px;
-}
-
-.TodoList .CompleteTask span{
-  border: none;
-  color: #e6edf377;
-  text-decoration: line-through;
-}
-
-.TodoList .item .BtnDelete{
-  padding: 5px;
-  border: none;
-  background: none;
-  color: #e6edf3a2;
-  cursor: pointer;
-}
-
-.TodoList .item .BtnDelete:hover{
-  color: #DA3633;
-}
-
-.TodoList .DeleteAll{
-  border: 1px solid #DA3633;
-  background: none;
-  color: #DA3633;
-  padding: 7px 50px;
-  border-radius: 5px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.TodoList .DeleteAll:hover{
-  background-color: #DA3633;
-  color: #E6EDF3;
-}
-
-.icone-central{
-  max-width: 100%;
-}
-
- */
-
-
- @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 body{
   background-color: #0D1117;
   font-family: 'Open Sans', sans-serif;
@@ -97,7 +42,7 @@ body{
   position: absolute;
   top:0;
   right: 0;
-  background-color: #2EA043;
+  background-color: #95a02e;
   color: #E6EDF3;
   border:none;
   padding: 10px 25px;
