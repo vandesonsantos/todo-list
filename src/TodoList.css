@@ -29,10 +29,10 @@ body{
 .form input{
   display: flex;
   width: 100%;
-  height: 60px;
+  height: 40px;
   background-color: #161B22;
   color: #E6EDF3;
-  border: none;
+  border: 2px solid #2EA043;
   padding-left: 30px;
   font-size: 16px;
   border-radius: 10px;
@@ -42,12 +42,13 @@ body{
   position: absolute;
   top:0;
   right: 0;
-  background-color: #95a02e;
+  background-color: #2EA043;
   color: #E6EDF3;
+  font-weight: 600;
   border:none;
   padding: 10px 25px;
-  height: 61px;
-  border-radius: 0 10px 10px 0;
+  height: 46px;
+  border-radius:   5px 5px;
   cursor: pointer;
 }
 
@@ -65,85 +66,87 @@ body{
 }
 
 .item{
-    display: flex;
-    justify-content: space-between;
-    border:1px solid #363b65;
-    margin-bottom: 10px;  
-    cursor: pointer;  
+  display: flex;
+  justify-content: space-between;
+  border:1px solid #363b65;
+  margin-bottom: 10px;  
+  cursor: pointer; 
+  border-radius: 5px; 
 }
 
 .item:hover{
-    background: #151627;
+  background: #151627;
 }
 
 .item span{
-    text-align: start;
-    width: 100%;    
-    color: white;
-    margin-right: 10px;
-    padding: 10px 15px;
+  text-align: start;
+  width: 100%;    
+  color: white;
+  margin-right: 10px;
+  padding: 10px 15px;
 }
 
 .item.completo{
-    display: flex;
-    justify-content: space-between;
-    background: #1e1f2e;
-    border:none;        
-    margin-bottom: 10px;  
-    cursor: pointer; 
-    opacity: 0.4;
+  display: flex;
+  justify-content: space-between;
+  background: #1e1f2e;
+  border:none;        
+  margin-bottom: 10px;  
+  cursor: pointer; 
+  opacity: 0.4;
 }
 
 .item.completo span{
-    text-align: start;
-    width: 100%;    
-    color: #4d506e;
-    margin-right: 10px;
-    padding: 10px 15px;
-    text-decoration: line-through;
+  text-align: start;
+  width: 100%;    
+  color: #4d506e;
+  margin-right: 10px;
+  padding: 10px 15px;
+  text-decoration: line-through;
 }
 
 button.del{
-    border:none;
-    background: none;
-    color: #4d506e;
-    padding:15px;
-    cursor: pointer;
+  border:none;
+  background: none;
+  color: #4d506e;
+  padding:15px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 button.del:hover{
-    background: #ff004c;
-    border:none;   
-    color: white;
-    padding:15px;
-    cursor: pointer;
+  border:none;   
+  color: white;
+  padding:15px;
+  cursor: pointer;
+  border: 1px solid #ff004c;
 }
 
 button.deleteAll{
-    border:1px solid #ff004c;
-    background: none;
-    padding:15px;
-    color: #ff004c;
-    font-weight: bold;
-    border-radius:5px;
-    cursor: pointer;
-    margin-top: 30px;
+  border:1px solid #ff004c;
+  background: none;
+  padding:15px;
+  color: #ff004c;
+  font-weight: bold;
+  border-radius:5px;
+  cursor: pointer;
+  margin-top: 30px;
 }
 
 button.deleteAll:hover{    
-    background: #ff004c;
-    color: white;
+  background: #ff004c;
+  color: white;
 }
 
 .icone-central{
-    max-width: 100%;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 900px){
-    .form{
-        width: 100%;
-    }
-    .listaTarefas{
-        width: 100%;
-    }
+  .form{
+      width: 100%;
+  }
+  .listaTarefas{
+      width: 100%;
+  }
 }

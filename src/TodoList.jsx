@@ -40,7 +40,7 @@ function TodoList() {
     }
 
     return (
-        <div>
+        <>
             <h1 className="title">Lista de Tarefas</h1>
 
             <form onSubmit={adicionaItem} className="form">
@@ -89,7 +89,7 @@ function TodoList() {
                     
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
