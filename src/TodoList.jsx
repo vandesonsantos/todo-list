@@ -89,6 +89,11 @@ function TodoList() {
                     
                 </div>
             </div>
+
+            <footer className="copyright">
+                <p>TodoList &copy; 2023; <strong>Vandeson Santos</strong> | site rev. 2023 | 
+                </p>
+            </footer>
         </>
     )
 }
