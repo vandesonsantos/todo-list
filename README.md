@@ -2,7 +2,7 @@
 
 Este é um aplicativo de Todo List desenvolvido em React e JavaScript, que permite ao usuário adicionar, marcar como concluído e excluir tarefas da lista de tarefas.
 
-[<img src="../todo-list/src/image/tela-readme.gif>](https://todo-list-three-xi.vercel.app/) 
+[<img src="./src/image/tela-readme.gif">](https://todo-list-three-xi.vercel.app/) 
  
 
 ## Instalação
